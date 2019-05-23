@@ -23,3 +23,11 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [ ] Backend: Add Receipt
 - [ ] Backend: Remove Receipt
 - [ ] Backend: Get all Receipt
+
+## Dependency
+- node.js@v10.15.3
+- npm@6.4.1
+- react@15.4.2
+- express@4.17.0
+- mongojs@2.6.0
+
