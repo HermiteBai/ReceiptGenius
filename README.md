@@ -6,7 +6,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 
 ## Task Todo List
 
-![Mockup](https://raw.githubusercontent.com/HermiteBai/ReceiptGenius/TASK-0/Dev_Challenge_Materials/Mockup.png)
+![Mockup](https://raw.githubusercontent.com/HermiteBai/ReceiptGenius/master/Dev_Challenge_Materials/Mockup.png)
 
 - [x] Add task list to README
 - [ ] Setup frontend project
