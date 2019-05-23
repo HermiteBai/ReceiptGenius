@@ -20,3 +20,6 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [ ] Grid: Receipt component
 - [ ] Grid: Button to remove receipt
 - [ ] Add Receipt: Dialog to upload receipt
+- [ ] Backend: Add Receipt
+- [ ] Backend: Remove Receipt
+- [ ] Backend: Get all Receipt
