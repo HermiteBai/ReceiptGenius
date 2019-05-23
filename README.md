@@ -4,15 +4,19 @@ RiskGenius Interview Project
 ## Project Overview
 A simple prototype that collects receipts for an expense report. The prototype includes a header and grid of receipts that responds to different screen sizes. [FontAwesome](https://fontawesome.com/) is used for icons and [Muli](https://fonts.google.com/specimen/Muli) is used as the webfont.
 
-## Feature Todo List
+## Task Todo List
 
+![Mockup](https://raw.githubusercontent.com/HermiteBai/ReceiptGenius/TASK-0/Dev_Challenge_Materials/Mockup.png)
 
-
-- [x] Add feature list to README
+- [x] Add task list to README
 - [ ] Setup frontend project
 - [ ] Setup backend project
 - [ ] Setup Database
 - [ ] Add header
 - [ ] Add grid of receipts
 - [ ] Add title and icon
-- [ ] Header: Add button for add receipt 
+- [ ] Header: Add button for add receipt
+- [ ] Header: Total amount of receipt
+- [ ] Grid: Receipt component
+- [ ] Grid: Button to remove receipt
+- [ ] Add Receipt: Dialog to upload receipt
