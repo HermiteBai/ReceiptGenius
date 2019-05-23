@@ -10,7 +10,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 
 - [x] Add task list to README
 - [x] Setup frontend project
-- [ ] Setup backend project
+- [x] Setup backend project
 - [ ] Setup Database
 - [ ] Add header
 - [ ] Add grid of receipts
