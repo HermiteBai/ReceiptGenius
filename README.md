@@ -9,7 +9,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 ![Mockup](https://raw.githubusercontent.com/HermiteBai/ReceiptGenius/master/materials/Mockup.png)
 
 - [x] Add task list to README
-- [ ] Setup frontend project
+- [x] Setup frontend project
 - [ ] Setup backend project
 - [ ] Setup Database
 - [ ] Add header
