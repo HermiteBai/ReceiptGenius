@@ -8,21 +8,21 @@ A simple prototype that collects receipts for an expense report. The prototype i
 
 ![Mockup](https://raw.githubusercontent.com/HermiteBai/ReceiptGenius/master/materials/Mockup.png)
 
-- [x] Add task list to README
-- [x] Setup frontend project
-- [x] Setup backend project
-- [ ] Setup Database
-- [ ] Add header
-- [ ] Add grid of receipts
-- [ ] Add title and icon
-- [ ] Header: Add button for add receipt
-- [ ] Header: Total amount of receipt
-- [ ] Grid: Receipt component
-- [ ] Grid: Button to remove receipt
-- [ ] Add Receipt: Dialog to upload receipt
-- [ ] Backend: Add Receipt
-- [ ] Backend: Remove Receipt
-- [ ] Backend: Get all Receipt
+- [x] 0 : Add task list to README
+- [x] 1 : Setup frontend project
+- [x] 2 : Setup backend project
+- [ ] 3 : Setup Database
+- [ ] 4 : Add header
+- [ ] 5 : Add grid of receipts
+- [ ] 6 : Add title and icon
+- [ ] 7 : Header: Add button for add receipt
+- [ ] 8 : Header: Total amount of receipt
+- [ ] 9 : Grid: Receipt component
+- [ ] 10 : Grid: Button to remove receipt
+- [ ] 11 : Add Receipt: Dialog to upload receipt
+- [ ] 12 : Backend: Add Receipt
+- [ ] 13 : Backend: Remove Receipt
+- [ ] 14 : Backend: Get all Receipt
 
 ## Dependency
 - node.js@v10.15.3
@@ -30,4 +30,3 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - react@15.4.2
 - express@4.17.0
 - mongojs@2.6.0
-
