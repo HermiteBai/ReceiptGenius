@@ -12,7 +12,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 1 : Setup frontend project
 - [x] 2 : Setup backend project
 - [x] 3 : Setup Database
-- [ ] 4 : Add header
+- [x] 4 : Add header
 - [ ] 5 : Add grid of receipts
 - [x] 6 : Add title and icon
 - [ ] 7 : Header: Add button for add receipt
@@ -30,3 +30,5 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - react@15.4.2
 - express@4.17.0
 - mongojs@2.6.0
+- typescript@3.4.5
+- antd@3.19.0
