@@ -1,14 +1,29 @@
-import React from 'react'
+import React from 'react';
+import { Card, Col, Row } from 'antd';
+import 'antd/dist/antd.css';
 
-function Gallery() {
+class Gallery extends React.Component {
 
-  return (
-    <div classNmae="Gallery">
-      <p>Receipt 1</p>
-      <p>Receipt 2</p>
-      <p>Receipt 3</p>
-    </div>
-  );
+  render() {
+    return (
+      <div classNmae="Gallery" style={{ background: '#FFFFFF', padding: '30px', paddingBottom: 8 }}>
+        <Row gutter={16}>
+          <Col span={4}>
+            <Card title="Card title" bordered={true} hoverable={true}>
+              Card content
+            </Card>
+          </Col>
+        </Row>
+        <Row gutter={16}>
+          <Col span={4}>
+            <Card bordered={true} hoverable={true}>
+              Card content
+            </Card>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
 }
 
 export default Gallery;

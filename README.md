@@ -13,9 +13,9 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 2 : Setup backend project
 - [x] 3 : Setup Database
 - [x] 4 : Add header
-- [ ] 5 : Add grid of receipts
+- [x] 5 : Add grid of receipts
 - [x] 6 : Add title and icon
-- [ ] 7 : Header: Add button for add receipt
+- [x] 7 : Header: Add button for add receipt
 - [ ] 8 : Header: Total amount of receipt
 - [ ] 9 : Grid: Receipt component
 - [ ] 10 : Grid: Button to remove receipt
