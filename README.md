@@ -11,7 +11,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 0 : Add task list to README
 - [x] 1 : Setup frontend project
 - [x] 2 : Setup backend project
-- [ ] 3 : Setup Database
+- [x] 3 : Setup Database
 - [ ] 4 : Add header
 - [ ] 5 : Add grid of receipts
 - [x] 6 : Add title and icon
