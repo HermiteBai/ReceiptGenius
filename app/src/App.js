@@ -11,7 +11,6 @@ function App() {
   for (var i = 0; i < receipts.length; i++) {
     var increase = receipts[i]['amount'];
     total += increase;
-    console.log(total);
   }
 
   return (

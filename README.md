@@ -17,7 +17,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 6 : Add title and icon
 - [x] 7 : Header: Add button for add receipt
 - [x] 8 : Header: Total amount of receipt
-- [ ] 9 : Grid: Receipt component
+- [x] 9 : Grid: Receipt component
 - [ ] 10 : Grid: Button to remove receipt
 - [ ] 11 : Add Receipt: Dialog to upload receipt
 - [ ] 12 : Backend: Add Receipt
@@ -32,3 +32,4 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - mongojs@2.6.0
 - typescript@3.4.5
 - antd@3.19.0
+- react-stack-grid@0.7.1

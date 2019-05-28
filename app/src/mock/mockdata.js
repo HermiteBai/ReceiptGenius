@@ -15,7 +15,47 @@ const receipts = [
       'category' : 'Supplies',
       'type' : 'jpg',
       'description' : 'description',
-    }
+    },
+    {
+      'vendor' : 'Meijer',
+      'date' : '05/20/2019',
+      'amount' : 600.51,
+      'category' : 'Supplies',
+      'type' : 'jpg',
+      'description' : '',
+    },
+    {
+      'vendor' : 'Costco',
+      'date' : '03/20/2012',
+      'amount' : 600.51,
+      'category' : 'Supplies',
+      'type' : 'pdf',
+      'description' : '',
+    },
+    {
+      'vendor' : 'Costco',
+      'date' : '03/21/2012',
+      'amount' : 300.51,
+      'category' : 'Supplies',
+      'type' : 'pdf',
+      'description' : '',
+    },
+    {
+      'vendor' : 'Costco',
+      'date' : '03/21/2012',
+      'amount' : 300.51,
+      'category' : 'Supplies',
+      'type' : 'pdf',
+      'description' : '',
+    },
+    {
+      'vendor' : 'Costco',
+      'date' : '03/21/2012',
+      'amount' : 300.51,
+      'category' : 'Supplies',
+      'type' : 'pdf',
+      'description' : '',
+    },
 ];
 
 export default receipts;
