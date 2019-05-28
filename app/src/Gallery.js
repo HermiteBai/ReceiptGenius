@@ -4,25 +4,32 @@ import 'antd/dist/antd.css';
 
 class Gallery extends React.Component {
 
+  constructor(props) {
+      super(props);
+      this.state = {receipts: this.props.receipts};
+    }
+
   createReceipts(num) {
-    var receipts = []
+    var cards = []
     for (var i = 0; i < num; i++) {
-      receipts.push(
+      cards.push(
         <Col span={4}>
-          <Card title="Card title" bordered={true} hoverable={true}>
-            Card content
+          <Card title={this.state.receipts[i]['vendor']} bordered={true} hoverable={true}>
+            ${this.state.receipts[i]['amount']}
           </Card>
         </Col>
       );
     }
-    return receipts;
+    return cards;
   }
 
   render() {
+    const receipts = this.props.receipts;
+
     return (
       <div classNmae="Gallery" style={{ background: '#FFFFFF', padding: '30px', paddingBottom: 8 }}>
         <Row gutter={16}>
-          {this.createReceipts(10)}
+          {this.createReceipts(receipts.length)}
         </Row>
       </div>
     );
