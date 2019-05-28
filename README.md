@@ -16,7 +16,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 5 : Add grid of receipts
 - [x] 6 : Add title and icon
 - [x] 7 : Header: Add button for add receipt
-- [ ] 8 : Header: Total amount of receipt
+- [x] 8 : Header: Total amount of receipt
 - [ ] 9 : Grid: Receipt component
 - [ ] 10 : Grid: Button to remove receipt
 - [ ] 11 : Add Receipt: Dialog to upload receipt
