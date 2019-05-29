@@ -45,7 +45,7 @@ const receipts = [
       'date' : '03/21/2012',
       'amount' : 300.51,
       'category' : 'Supplies',
-      'type' : 'pdf',
+      'type' : 'jpg',
       'description' : '',
     },
     {
