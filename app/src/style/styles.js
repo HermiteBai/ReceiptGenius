@@ -39,7 +39,7 @@ const styles = {
   'detailsStyle' : {
     'padding' : '5px',
     'marginLeft' : '100px',
-    'text-overflow' : 'ellipsis',
+    'textOverflow' : 'ellipsis',
   }
 }
 

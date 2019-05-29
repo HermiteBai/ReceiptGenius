@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Row } from 'antd';
 import 'antd/dist/antd.css';
 import StackGrid from "react-stack-grid";
 
@@ -23,7 +22,7 @@ class Gallery extends React.Component {
                    type={this.state.receipts[i]['type']}
                    description={this.state.receipts[i]['description']}
                    bordered={true}
-                   hoverable={true}>
+                   key={i}>
             ${this.state.receipts[i]['amount']}
           </Receipt>
       );
