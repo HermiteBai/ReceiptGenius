@@ -3,6 +3,7 @@ import React from 'react';
 import Gallery from './components/Gallery'
 import Header from './components/Header'
 import receipts from './mock/mockdata'
+import round from './utils'
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header total={total}></Header>
+      <Header total={round(total, 2)}></Header>
       <Gallery receipts={receipts}></Gallery>
     </div>
   );

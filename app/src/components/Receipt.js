@@ -1,6 +1,7 @@
 import React from 'react';
 
-import styles from '../style/styles'
+import styles from '../style/styles';
+import round from '../utils';
 
 class Receipt extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class Receipt extends React.Component {
         </div>
         <div style={styles.detailsStyle}>
           <p>{this.props.vendor} <i className="fas fa-trash" style={{'visibility' : this.state.visibility}}></i></p>
-          <p>${this.props.amount}</p>
+          <p>${round(this.props.amount, 2)}</p>
           <p>{this.props.date}</p>
           <button type="button" style={styles.pillStyle}>{this.props.category}</button>
           <small>{this.props.description}</small>
