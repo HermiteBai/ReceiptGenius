@@ -3,7 +3,7 @@ const receipts = [
     {
       'vendor' : 'Walmart',
       'date' : '05/14/2010',
-      'amount' : 110.51,
+      'amount' : 1110.51,
       'category' : 'Supplies',
       'type' : 'pdf',
       'description' : 'description',
@@ -11,7 +11,7 @@ const receipts = [
     {
       'vendor' : 'Best Buy',
       'date' : '05/20/2010',
-      'amount' : 300.51,
+      'amount' : 300.5,
       'category' : 'Supplies',
       'type' : 'jpg',
       'description' : 'description',

@@ -1,6 +1,7 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import StackGrid from "react-stack-grid";
+
+import 'antd/dist/antd.css';
 
 import Receipt from './Receipt'
 
@@ -8,7 +9,9 @@ class Gallery extends React.Component {
 
   constructor(props) {
       super(props);
-      this.state = {receipts: this.props.receipts};
+      this.state = {
+        receipts: this.props.receipts,
+      };
   }
 
   createReceipts(num) {
