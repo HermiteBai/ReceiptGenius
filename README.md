@@ -34,3 +34,4 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - typescript@3.4.5
 - antd@3.19.0
 - react-stack-grid@0.7.1
+- axios@0.19.0

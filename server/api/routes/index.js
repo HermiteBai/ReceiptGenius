@@ -1,5 +1,6 @@
 var receipts = require('../data/mockdata');
 var express = require('express');
+var ObjectId = require('mongodb').ObjectId;
 var router = express.Router();
 
 router.use(express.json());
@@ -32,6 +33,8 @@ router.post('/', function(req, res, next) {
   var MongoClient = require('mongodb').MongoClient;
   var url = "mongodb://localhost:5000/";
 
+  console.log(req.body);
+
   MongoClient.connect(url, function(err, db) {
     if (err) {
       console.log('Unable to connect to mongodb, please try again!');
@@ -59,7 +62,7 @@ router.delete('/', function(req, res, next) {
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("ReceiptGenius");
-    var myquery = req.body;
+    var myquery = {_id: new ObjectId(req.body._id)};
     dbo.collection("receipts").deleteOne(myquery, function(err, obj) {
       if (err) throw err;
       console.log("1 receipt deleted");

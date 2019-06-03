@@ -1,5 +1,6 @@
 import React from 'react';
 import StackGrid from "react-stack-grid";
+import axios from 'axios';
 
 import 'antd/dist/antd.css';
 
@@ -17,18 +18,19 @@ class Gallery extends React.Component {
   createReceipts(num) {
     var cards = []
     for (var i = 0; i < num; i++) {
-      cards.push(
-          <Receipt vendor={this.state.receipts[i]['vendor']}
-                   amount={this.state.receipts[i]['amount']}
-                   date={this.state.receipts[i]['date']}
-                   category={this.state.receipts[i]['category']}
-                   type={this.state.receipts[i]['type']}
-                   description={this.state.receipts[i]['description']}
-                   bordered={true}
-                   key={i}>
-            ${this.state.receipts[i]['amount']}
-          </Receipt>
-      );
+      if (this.props.receipts[i]) {
+        cards.push(
+            <Receipt vendor={this.props.receipts[i].vendor}
+                     amount={parseFloat(this.props.receipts[i]['amount'])}
+                     date={this.props.receipts[i]['date']}
+                     category={this.props.receipts[i]['category']}
+                     type={this.props.receipts[i]['type']}
+                     description={this.props.receipts[i]['description']}
+                     bordered={true}
+                     key={i}>
+            </Receipt>
+        );
+      }
     }
     return cards;
   }
@@ -39,7 +41,7 @@ class Gallery extends React.Component {
     return (
       <div className="Gallery" style={{ background: '#FFFFFF', padding: '30px', paddingBottom: 8 }}>
         <StackGrid columnWidth={200} horizontal={true}>
-            {this.createReceipts(receipts.length)}
+            {this.createReceipts(this.props.receipts.length)}
         </StackGrid>
       </div>
     );
