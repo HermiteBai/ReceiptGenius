@@ -23,7 +23,7 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - [x] 12 : Backend: Add Receipt
 - [x] 13 : Backend: Remove Receipt
 - [x] 14 : Backend: Get all Receipt
-- [ ] 15 : Integration: AJAX
+- [x] 15 : Integration: AJAX
 
 ## Dependency
 - node.js@v10.15.3

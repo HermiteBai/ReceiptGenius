@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import styles from '../style/styles';
 import round from '../utils';
@@ -31,6 +32,19 @@ class Receipt extends React.Component {
     this.setState({visibility : 'hidden'});
   }
 
+  handleClick = (e, data) => {
+    // access to e.target here
+    console.log(data);
+    axios.delete('http://localhost:4000/', {data: {_id: data}})
+    .then(function (response) {
+      console.log(response);
+      window.location.reload();
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
   render() {
     return (
       <div className="Receipt" style={styles.receiptStyle} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
@@ -38,7 +52,9 @@ class Receipt extends React.Component {
           {this.getIcon(this.props.type)}
         </div>
         <div style={styles.detailsStyle}>
-          <p>{this.props.vendor} <i className="fas fa-trash" style={{'visibility' : this.state.visibility}}></i></p>
+          <div onClick={(e)=>this.handleClick(e, this.props.id)}>
+            <p>{this.props.vendor} <i className="fas fa-trash" style={{'visibility' : this.state.visibility}}></i></p>
+          </div>
           <p>${round(this.props.amount, 2)}</p>
           <p>{this.props.date}</p>
           <button type="button" style={styles.pillStyle}>{this.props.category}</button>

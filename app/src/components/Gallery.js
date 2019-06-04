@@ -1,7 +1,5 @@
 import React from 'react';
 import StackGrid from "react-stack-grid";
-import axios from 'axios';
-
 import 'antd/dist/antd.css';
 
 import Receipt from './Receipt'
@@ -27,6 +25,7 @@ class Gallery extends React.Component {
                      type={this.props.receipts[i]['type']}
                      description={this.props.receipts[i]['description']}
                      bordered={true}
+                     id={this.props.receipts[i]['_id']}
                      key={i}>
             </Receipt>
         );
@@ -36,8 +35,7 @@ class Gallery extends React.Component {
   }
 
   render() {
-    const receipts = this.props.receipts;
-
+    
     return (
       <div className="Gallery" style={{ background: '#FFFFFF', padding: '30px', paddingBottom: 8 }}>
         <StackGrid columnWidth={200} horizontal={true}>

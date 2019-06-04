@@ -23,7 +23,6 @@ router.get('/', function(req, res, next) {
         console.log('No data found, will use mock data instead');
       }
       res.json({data: result});
-      console.log(result);
       db.close();
     });
   });
@@ -66,7 +65,6 @@ router.delete('/', function(req, res, next) {
     dbo.collection("receipts").deleteOne(myquery, function(err, obj) {
       if (err) throw err;
       console.log("1 receipt deleted");
-      console.log(obj);
       db.close();
       res.status(200).end();
     });
