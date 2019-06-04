@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
-import Gallery from './components/Gallery'
-import Header from './components/Header'
-import receipts from './mock/mockdata'
-import round from './utils'
+import Gallery from './components/Gallery';
+import Header from './components/Header';
+import receipts from './mock/mockdata';
+import round from './utils';
+import url from './config';
 
 import './App.css';
 
@@ -19,7 +20,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/', {
+    axios.get(url, {
       headers: {"Access-Control-Allow-Origin": "*"}
     })
     .then(res => {

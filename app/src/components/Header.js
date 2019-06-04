@@ -3,6 +3,7 @@ import { Modal, Upload, Button, Radio, Input, InputNumber, DatePicker, message }
 import axios from 'axios';
 
 import styles from '../style/styles';
+import url from '../config';
 
 const dateFormat = 'MM/DD/YYYY';
 
@@ -39,7 +40,7 @@ class Header extends React.Component {
       'description' : this.state.description,
     }
 
-    axios.post('http://localhost:4000', data)
+    axios.post(url, data)
       .then(function (response) {
         console.log(response);
         window.location.reload();

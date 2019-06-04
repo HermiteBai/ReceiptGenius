@@ -35,3 +35,28 @@ A simple prototype that collects receipts for an expense report. The prototype i
 - antd@3.19.0
 - react-stack-grid@0.7.1
 - axios@0.19.0
+
+## Usage
+
+#### Setup MongoDB Server
+
+~~~~
+mongod --port <database port> #Default to be 5000
+~~~~
+
+#### Setup Backend Server
+
++ Modify host and port in `server/api/app.js` for database
++ Modify port `const port = <backend port>`
+
+~~~~
+node app.js
+~~~~
+
+#### Frontend Config
+
++ Modify host and port in `app/config.js`
+
+~~~~
+npm start
+~~~~

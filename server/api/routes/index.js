@@ -1,5 +1,6 @@
 var receipts = require('../data/mockdata');
 var express = require('express');
+var url = require('../config');
 var ObjectId = require('mongodb').ObjectId;
 var router = express.Router();
 
@@ -7,7 +8,6 @@ router.use(express.json());
 
 router.get('/', function(req, res, next) {
   var MongoClient = require('mongodb').MongoClient;
-  var url = "mongodb://localhost:5000/";
   res.setHeader('Content-Type', 'application/json');
 
   MongoClient.connect(url, function(err, db) {
@@ -30,10 +30,6 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   var MongoClient = require('mongodb').MongoClient;
-  var url = "mongodb://localhost:5000/";
-
-  console.log(req.body);
-
   MongoClient.connect(url, function(err, db) {
     if (err) {
       console.log('Unable to connect to mongodb, please try again!');
@@ -56,8 +52,6 @@ router.post('/', function(req, res, next) {
 
 router.delete('/', function(req, res, next) {
   var MongoClient = require('mongodb').MongoClient;
-  var url = "mongodb://localhost:5000/";
-
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("ReceiptGenius");

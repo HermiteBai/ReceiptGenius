@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import styles from '../style/styles';
 import round from '../utils';
+import url from '../config';
 
 class Receipt extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Receipt extends React.Component {
   handleClick = (e, data) => {
     // access to e.target here
     console.log(data);
-    axios.delete('http://localhost:4000/', {data: {_id: data}})
+    axios.delete(url, {data: {_id: data}})
     .then(function (response) {
       console.log(response);
       window.location.reload();
